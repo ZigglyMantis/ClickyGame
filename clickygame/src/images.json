@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "image": "https://raw.githubusercontent.com/ZigglyMantis/ClickyGame/master/clickygame/public/images/Ash.png"
+    },
+    {
+        "id": 2,
+        "image": "https://raw.githubusercontent.com/ZigglyMantis/ClickyGame/master/clickygame/public/images/Atlas.png"
+    },
+    {
+        "id": 3,
+        "image": "https://raw.githubusercontent.com/ZigglyMantis/ClickyGame/master/clickygame/public/images/Ember.png"
+    },
+    {
+        "id": 4,
+        "image": "https://raw.githubusercontent.com/ZigglyMantis/ClickyGame/master/clickygame/public/images/Excalibur.png"
+    },
+    {
+        "id": 5,
+        "image": "https://raw.githubusercontent.com/ZigglyMantis/ClickyGame/master/clickygame/public/images/Frost.png"
+    },
+    {
+        "id": 6,
+        "image": "https://raw.githubusercontent.com/ZigglyMantis/ClickyGame/master/clickygame/public/images/Limbo.png"
+    },
+    {
+        "id": 7,
+        "image": "https://raw.githubusercontent.com/ZigglyMantis/ClickyGame/master/clickygame/public/images/Loki.png"
+    },
+    {
+        "id": 8,
+        "image": "https://raw.githubusercontent.com/ZigglyMantis/ClickyGame/master/clickygame/public/images/Mag.png"
+    },
+    {
+        "id": 9,
+        "image": "https://raw.githubusercontent.com/ZigglyMantis/ClickyGame/master/clickygame/public/images/Mesa.png"
+    },
+    {
+        "id": 10,
+        "image": "https://raw.githubusercontent.com/ZigglyMantis/ClickyGame/master/clickygame/public/images/Mirage.png"
+    },
+    {
+        "id": 11,
+        "image": "https://raw.githubusercontent.com/ZigglyMantis/ClickyGame/master/clickygame/public/images/Rhino.png"
+    },
+    {
+        "id": 12,
+        "image": "https://raw.githubusercontent.com/ZigglyMantis/ClickyGame/master/clickygame/public/images/Saryn.png"
+    },
+    {
+        "id": 13,
+        "image": "https://raw.githubusercontent.com/ZigglyMantis/ClickyGame/master/clickygame/public/images/Trinity.png"
+    },
+    {
+        "id": 14,
+        "image": "https://raw.githubusercontent.com/ZigglyMantis/ClickyGame/master/clickygame/public/images/Vauban.png"
+    },
+    {
+        "id": 15,
+        "image": "https://raw.githubusercontent.com/ZigglyMantis/ClickyGame/master/clickygame/public/images/Volt.png"
+    },
+    {
+        "id": 16,
+        "image": "https://raw.githubusercontent.com/ZigglyMantis/ClickyGame/master/clickygame/public/images/Nyx.png"
+    }
+]
