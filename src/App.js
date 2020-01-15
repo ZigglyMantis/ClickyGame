@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Banner from "./components/Banner/Banner"
 import NavTabs from "./components/NavTabs/NavTabs"
-import images from "./warframes.json.js.js.js"
+import images from "./warframes.json"
 import Wrapper from "./components/Wrapper/Wrapper"
 import ImageCard from "./components/Wrapper/ImageCards/ImageCard"
 
