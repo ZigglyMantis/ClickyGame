@@ -1,6 +1,5 @@
 .nav-bar {
-    background-image: linear-gradient(to top, rgba(0, 0, 128, 0.404), rgb(0, 0, 128));
-    background: radial-gradient(circle, rgba(0, 0, 128, 0.75), rgba(0, 0, 255, 0.50), rgba(135, 206, 250, 0.15));
+    background-image: url("https://raw.githubusercontent.com/ZigglyMantis/ClickyGame/master/clickygame/public/images/navbar.jpg");
     color: rgb(255, 232, 150);
     position: fixed;
     text-align: center;
