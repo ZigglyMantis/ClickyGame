@@ -1,7 +1,7 @@
-/* .container {
+.container {
     display: block;
-    padding: 15% 5%;
+    padding-top: 80px;
     text-align: center;
-    color: navy;
+    color: black;
     border-color: rgb(0, 0, 100);
-} */
+}

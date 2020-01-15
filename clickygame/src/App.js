@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Banner from "./components/Banner/Banner"
-import Navbar from "./components/Navbar/Navbar"
+import NavTabs from "./components/NavTabs/NavTabs"
 import images from "./warframes.json"
 import Wrapper from "./components/Wrapper/Wrapper"
-import ImageCard from "./components/ImageCards/ImageCard"
+import ImageCard from "./components/Wrapper/ImageCards/ImageCard"
 
 
 
@@ -13,7 +13,8 @@ class App extends Component {
     score: 0,
     Wins: 0,
     guessedImages: [],
-    victoryCondition: ""
+    victoryCondition: "",
+    winCondition: ""
   };
 
   // generate from 0-15 to pick image
@@ -29,8 +30,8 @@ class App extends Component {
     return randomResult
   };
   // function for guessed correctly and not up to 15
-  guessedImages(x) {
-    if (this.state.guessedImages.includes(parseInt(x))) {
+  guessedImages(alt) {
+    if (this.state.guessedImages.includes(parseInt(alt))) {
       return true
     } else {
       return false
@@ -41,7 +42,7 @@ class App extends Component {
   winCondition() {
     if (this.state.guessedImages.length === 16) {
       this.setState({
-        victoryCondition: "Congratulations you won the game!!!",
+        winCondition: "Congratulations you won the game!!!",
         Wins: this.state.Wins + 1,
         score: 0,
         guessedImages: []
@@ -50,9 +51,22 @@ class App extends Component {
   };
   // on click events
   onMouse1 = event => {
-    const { x } = event.target;
-    if (this.guessedImages(x)) {
+    const { alt } = event.target;
+    if (this.guessedImages(alt)) {
+      this.state.guessedImages = []
       this.setState({
+        images: this.generateRandomImage(this.state.images),
+        victoryCondition: "Sorry, but you already picked that Warframe.",
+        score: 0
+      });
+      console.log(this.state.images)
+    } else {
+      var correctGuess = this.state.guessedImages
+      correctGuess.push(parseInt(alt))
+
+      this.setState({
+        score: correctGuess.length,
+        guessedImages: correctGuess,
         images: this.generateRandomImage(this.state.images),
         victoryCondition: "Good!"
       })
@@ -63,13 +77,23 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar score={this.state.score} winCondition={this.state.winCondition} Wins={this.state.Wins} />
+        <NavTabs score={this.state.score} victoryCondition={this.state.victoryCondition} Wins={this.state.Wins} />
         <Banner />
-        <Wrapper>{
-          this.state.images.map(image => (
-            <ImageCard id={image.id} key={image.id} alt={image.id} image={image.image} count={this.state.count} onMouse1={this.onMouse1} />
-          ))
-        }</Wrapper>
+        <Wrapper>
+          {
+            this.state.images.map(image => (
+              <ImageCard
+                id={image.id}
+                key={image.id}
+                alt={image.id}
+                image={image.image}
+                count={this.state.count}
+                onMouse1={this.onMouse1} 
+              />
+            ))
+          }
+
+        </Wrapper>
       </div>
     )
   }

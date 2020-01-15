@@ -1,7 +1,7 @@
 import React from "react";
-import "./Navbar.css";
+import "./NavTabs.css";
 
-function Navbar (props) {
+function NavTabs (props) {
     return (
         <div className="row nav-bar nav-bar-fluid">
             <div className="col-4">
@@ -17,4 +17,4 @@ function Navbar (props) {
     );
 }
 
-export default Navbar;
+export default NavTabs;
