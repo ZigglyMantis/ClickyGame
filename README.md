@@ -22,6 +22,6 @@ However, if you pull this down and want to use it locally npm install
 
 The main branch should work on most computers locally, file paths might need to be changed, but unlikely.
 
-Link to game: 
+Link to game: https://zigglymantis.github.io/ClickyGame/
 
 Requirements: Have fun.
